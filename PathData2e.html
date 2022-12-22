@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pathfinder 2nd Edition Data</title>
+  </head>
+  <body>
+    <h1>Pathfinder 2nd Edition Data</h1>
+    <h2>Spells</h2>
+    <form id="spell-form">
+      <label for="spell-level">Level:</label>
+      <input type="number" id="spell-level" name="spell-level">
+      <br>
+      <label for="spell-school">School:</label>
+      <select id="spell-school" name="spell-school">
+        <option value="all">All</option>
+        <option value="abjuration">Abjuration</option>
+        <option value="conjuration">Conjuration</option>
+        <option value="divination">Divination</option>
+        <option value="enchantment">Enchantment</option>
+        <option value="evocation">Evocation</option>
+        <option value="illusion">Illusion</option>
+        <option value="necromancy">Necromancy</option>
+        <option value="transmutation">Transmutation</option>
+      </select>
+      <br>
+      <button type="submit">Search</button>
+    </form>
+    <ul id="spell-list"></ul>
+    <h2>Classes</h2>
+    <form id="class-form">
+      <label for="class-name">Name:</label>
+      <input type="text" id="class-name" name="class-name">
+      <br>
+      <button type="submit">Search</button>
+    </form>
+    <ul id="class-list"></ul>
+    <h2>Feats</h2>
+    <form id="feat-form">
+      <label for="feat-name">Name:</label>
+      <input type="text" id="feat-name" name="feat-name">
+      <br>
+      <button type="submit">Search</button>
+    </form>
+    <ul id="feat-list"></ul>
+    <script src="pathfinder.js"></script>
+  </body>
+</html>
